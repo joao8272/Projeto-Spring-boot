@@ -1,7 +1,7 @@
 package com.estudo.projetoSpringBoot.Entities;
 
 import com.estudo.projetoSpringBoot.Entities.Pk.OrderItemPk;
-import jakarta.persistence.Embeddable;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -13,7 +13,7 @@ import java.io.Serializable;
 public class OrderItem implements Serializable {
 
     @EmbeddedId
-    private OrderItemPk id;
+    private OrderItemPk id = new OrderItemPk();
 
     private Integer quantity;
     private Double price;
@@ -26,6 +26,7 @@ public class OrderItem implements Serializable {
         this.quantity = quantity;
         this.price = price;
     }
+    @JsonIgnore
     public Order getOrder(){
         return id.getOrder();
     }
@@ -41,7 +42,6 @@ public class OrderItem implements Serializable {
     public Integer getQuantity() {
         return quantity;
     }
-
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
