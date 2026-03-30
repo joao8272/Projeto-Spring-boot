@@ -1,7 +1,6 @@
 package com.estudo.projetoSpringBoot.Entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.sun.source.doctree.SeeTree;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
