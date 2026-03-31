@@ -1,8 +1,6 @@
 package com.estudo.projetoSpringBoot.Services;
 
-import com.estudo.projetoSpringBoot.Entities.Category;
 import com.estudo.projetoSpringBoot.Entities.Product;
-import com.estudo.projetoSpringBoot.Repositories.CategoryRepository;
 import com.estudo.projetoSpringBoot.Repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

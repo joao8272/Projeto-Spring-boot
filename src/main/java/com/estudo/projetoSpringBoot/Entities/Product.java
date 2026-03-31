@@ -2,7 +2,6 @@ package com.estudo.projetoSpringBoot.Entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;

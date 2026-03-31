@@ -3,7 +3,6 @@ package com.estudo.projetoSpringBoot.Entities;
 import com.estudo.projetoSpringBoot.Entities.Enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
-
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.HashSet;
